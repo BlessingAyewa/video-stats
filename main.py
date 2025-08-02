@@ -24,7 +24,7 @@ header = {
 
 # Connecting to Google Sheet
 try:
-    gc = gspread.service_account(filename='key.json') # Get your JSON key from Google Cloud and give your service account email editor access to your Google Sheet.
+    gc = gspread.service_account(filename='goolglesheet-connect.json') # Get your JSON key from Google Cloud and give your service account email editor access to your Google Sheet.
     sh = gc.open('GoogleSheet Name')
     worksheet = sh.worksheet('Sheet1')
     worksheet_data = worksheet.get_all_values()[2:]
